@@ -11,4 +11,4 @@ class DBConnectionHandler:
     def get_engine(self):
         return self.__engine
     
-dbconnectionhandler = DBConnectionHandler() # :: Singleton
+dbconnectionhandler = DBConnectionHandler() # :: Singleton for tests

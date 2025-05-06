@@ -1,2 +1,4 @@
 /myEnv
 storage.db
+**/__pycache__
+.pytest_cache

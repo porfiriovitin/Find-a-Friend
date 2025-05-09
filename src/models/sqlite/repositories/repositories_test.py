@@ -2,7 +2,7 @@ import pytest
 from src.models.sqlite.settings.connection import dbconnectionhandler
 from .pets_repository import PetsRepository
 
-dbconnectionhandler.connect_to_db()
+#dbconnectionhandler.connect_to_db()
 
 @pytest.mark.skip(reason="db iter")
 def test_list_pets():

@@ -22,4 +22,4 @@ class DBConnectionHandler:
         self.session.close()
 
 # :: Mock for tests
-dbconnectionhandler = DBConnectionHandler() # :: Singleton for tests
+#dbconnectionhandler = DBConnectionHandler() # :: Singleton for tests

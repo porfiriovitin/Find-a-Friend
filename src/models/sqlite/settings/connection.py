@@ -21,5 +21,5 @@ class DBConnectionHandler:
     def __exit__(self, exc_type, exc_val, exc_tb):
         self.session.close()
 
-# :: Mock for tests
-#dbconnectionhandler = DBConnectionHandler() # :: Singleton for tests
+
+db_connection_handler = DBConnectionHandler() 

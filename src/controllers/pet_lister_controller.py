@@ -11,14 +11,14 @@ class PetListerController(PetListerControllerInterface):
         response = self.__format_response(pets)
         return response
 
-    def __get_pets_in_db(self) -> list[PetsTable]:
+    def __get_pets_in_db(self) -> list:
         pets = self.__pet_repository.list_pets()
         return pets
     
-    def __format_response(self, pets: list[PetsTable]) -> dict:
+    def __format_response(self, pets: list) -> dict:
         formatted_pets = []
         for pet in pets:
-            formatted_pets.append({"name": pet.name, "type": pet.type, "id": pet.id })
+            formatted_pets.append({"name": pet.name, "id": pet.id })
 
         return {
             "data": {
